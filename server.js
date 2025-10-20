@@ -17,4 +17,5 @@ app.use("/api/members", membersRouter);
 app.use("/api/formations", formationsRouter);
 app.use("/api/news", newsRouter);
 
-app.listen(5000, () => console.log(" Server running on port 5000"));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
