@@ -11,9 +11,15 @@ dotenv.config();
 const app = express();
 
 // Allow frontend URLs to access backend
+
 app.use(cors({
-  origin: ["http://localhost:3000", "https://csclub-topaz.vercel.app"]
+  origin: [
+    "http://localhost:3000",
+    "https://csclub-topaz.vercel.app",
+    "https://csbackend-v2.vercel.app"
+  ]
 }));
+
 
 app.use(express.json());
 
