@@ -16,7 +16,7 @@ app.use(cors({
   origin: [
     "http://localhost:3000",
     "https://csclub-topaz.vercel.app",
-    "https://csbackend-v2.vercel.app"
+    "https://csbackend-33-w3v2.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
