@@ -17,7 +17,9 @@ app.use(cors({
     "http://localhost:3000",
     "https://csclub-topaz.vercel.app",
     "https://csbackend-v2.vercel.app"
-  ]
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 
